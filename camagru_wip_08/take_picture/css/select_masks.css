@@ -1,0 +1,34 @@
+td{
+	border: 2px solid black;
+
+}
+label > input{
+	visibility: hidden;
+	position: absolute;
+}
+label > input + img{
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+label > input:checked + img{
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+}
+label :not(:hover)
+{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+}
+label :hover{
+	filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}

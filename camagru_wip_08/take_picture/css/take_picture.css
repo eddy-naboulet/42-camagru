@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+
+.center{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.prev{
+	display: none;
+	position: absolute;
+	z-index: 0;
+	top: 10px;
+	left: 300px;
+	left: 150px;
+	bottom: 360px;
+}
+.btn {
+    font-family: dosis;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: .5rem 1rem;
+    margin: 0;
+    height: auto;
+    border: 2px solid black;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+	color: white;
+	background-color: black;
+}
+
+.gallery {
+	width: 	100%;
+}
+
+.last_g {
+	border: 2px solid black;
+	padding: 5px;
+	margin: 5px;
+	width: 250px;
+	/*height: inherit;*/
+	height: 201.5px;
+	background: white;
+	-webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
+}
+
+.last_g:hover {
+	transform: scale(1.4);
+}
+.vd{
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.test{
+	border: 2px solid black;
+	padding: 5px;
+	background: white;
+	margin: 0 auto;
+}
+@keyframes scaleUp {
+	50% { width: 250px; transform: scale(0,0); }
+    100% { width: 250px; transform: scale(1,1); }
+}
+@keyframes scaleDown {
+	0% { width: 250px; transform: scale(1,1);}
+	99% { width: 250px; transform: scale(0,0);}
+    100% { width: 0px; transform: scale(0,0); }
+}
+.okok{
+	-webkit-transform: scale(0,0);
+	-moz-transform: scale(0,0);
+	-o-transform: scale(0,0);
+	-ms-transform: scale(0,0);
+	transform: scale(0,0);
+	-webkit-transition: -webkit-transform 0.3s linear;
+	-o-transition: -o-transform 0.3s linear;
+	-ms-transition: -ms-transform 0.3s linear;
+	transition: transform 0.3s linear;
+}
+.none{
+	visibility: hidden;
+	border: none;
+}
+.lolilol{
+	width: 0px;
+	height: 0px;
+	border: none;
+	visibility: hidden;
+}

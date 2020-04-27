@@ -1,0 +1,50 @@
+.isField {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	position: absolute;
+
+}
+
+.isInactive {
+	display: none;
+}
+
+.isAnimatedOut {
+	animation: goOut 600ms ease-in 0s forwards;
+}
+
+.isAnimatedIn {
+	animation: goIn 600ms ease-out 0s forwards;
+}
+
+.isAnimatedOutBack {
+	animation: goOutBack 600ms ease-in 0s forwards;
+}
+
+.isAnimatedInBack {
+	animation: goInBack 600ms ease-out 0s forwards;
+}
+
+.infoServer {
+	font-family: dosis;
+	position: relative;
+	margin: 10px;
+	padding: 10px;
+	height: 100px;
+	width: 450px;
+	background-color: #FFF;
+	margin-top: 400px;
+}
+.infoServer_login {
+	font-family: dosis;
+	position: relative;
+	padding-left: 20%;
+	padding-right: 20%;
+	top: 50%;
+}

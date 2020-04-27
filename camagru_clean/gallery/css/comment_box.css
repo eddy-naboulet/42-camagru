@@ -1,0 +1,104 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+
+td{
+	border: 2px solid black;
+}
+.ppr_pict{
+	width: 70px;
+	height: 70px;
+}
+.formform{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 0;
+}
+.title_comment_box{
+	font-family:dosis;
+	background-color: rgba(150, 150, 150, 1);
+
+}
+.title_comment_box2{
+	font-family:dosis;
+	background-color: rgba(150, 150, 150, 1);
+
+}
+.table_comment{
+	margin-left: auto;
+	margin-right: auto;
+}
+.id_pictures{
+	visibility: hidden;
+}
+.txtar{
+	resize: none;
+	background-color: rgba(150, 150, 150, 1);
+
+	border: 2px solid black;
+
+}
+.txtar2{
+	resize: none;
+	background-color: rgba(150, 150, 150, 1);
+	border: none;
+
+
+}
+.send_comment{
+	background-color: rgba(150, 150, 150, 1);
+
+}
+.date_comment {
+	color: rgba(200, 200, 200, 1);
+    font-family:dosis;
+    font-size:10px;
+}
+.comment{
+	color:black;
+	font-family:dosis;
+	font-size:20px;
+}
+.none{
+	border: none;
+}
+.btn_comment{
+	font-family: dosis;
+	font-size: 1rem;
+	font-weight: normal;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	line-height: normal;
+	padding: .5rem 1rem;
+	margin: 0;
+	height: auto;
+	border: none;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	background-color: rgba(150, 150, 150, 1);
+
+}
+.btn_comment:hover {
+	color: white;
+	background-color: black;
+}.title_comment_box2:hover {
+	color: white;
+	background-color: black;
+}
+.user_login{
+	padding: 5px;
+	font-size:20px;
+	font-family:dosis;
+	text-align: center;
+}
+.profile-picture_user{
+	width: 10%;
+	background-color: rgba(150, 150, 150, 1);
+
+}
+.comment_user{
+	width: 100%;
+	background-color: rgba(150, 150, 150, 1);
+
+}

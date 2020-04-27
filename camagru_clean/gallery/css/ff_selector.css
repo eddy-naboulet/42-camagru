@@ -1,0 +1,151 @@
+.ff-items{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.ff-container .inp{
+	display: none;
+}
+.details{
+	transform-origin: bottom;
+	display: block;
+	background: rgba(0,0,0, 0.9);
+	color: #fff;
+	position: absolute;
+	width: 250px;
+	height: 0px;
+	overflow: hidden;
+	opacity: 0;
+	text-align: center;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.ff-items :hover .details{
+	height: 187.5px;
+	transform-origin: bottom;
+	width: 250px;
+	opacity: 1;
+}
+.btn {
+    font-family: dosis;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: .5rem 1rem;
+    margin: 0;
+    height: auto;
+    border: 2px solid black;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+	color: white;
+	background-color: black;
+}
+.center{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.ff-container input.ff-selector-type-all:checked ~ .ff-items li{
+	width: 250px;
+	-webkit-transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-o-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	transform: scale(1,1);
+	-webkit-transition: -webkit-transform 0.3s linear;
+	-o-transition: -o-transform 0.3s linear;
+	-ms-transition: -ms-transform 0.3s linear;
+	transition: transform 0.3s linear;
+}
+.mask
+{
+	-webkit-transition: -webkit-transform 0.3s linear, width 0s linear 0.3s;
+	-moz-transition: -moz-transform 0.3s linear, width 0s linear 0.3s;
+	-o-transition: -o-transform 0.3s linear, width 0s linear 0.3s;
+	-ms-transition: -ms-transform 0.3s linear, width 0s linear 0.3s;
+	transition: transform 0.3s linear, width 0s linear 0.3s;
+	-webkit-animation: scaleUp 0.3s linear 0.4s forwards;
+	-moz-animation: scaleUp 0.3s linear 0.4s forwards;
+	-o-animation: scaleUp 0.3s linear 0.4s forwards;
+	-ms-animation: scaleUp 0.3s linear 0.4s forwards;
+	animation: scaleUp 0.3s linear 0.4s forwards;
+}
+.ff-container input.ff-selector-type-1:checked ~ .ff-items li:not(.Richard),
+.ff-container input.ff-selector-type-2:checked ~ .ff-items li:not(.Peter),
+.ff-container input.ff-selector-type-3:checked ~ .ff-items li:not(.Rasmus),
+.ff-container input.ff-selector-type-4:checked ~ .ff-items li:not(.Aubrey),
+.ff-container input.ff-selector-type-5:checked ~ .ff-items li:not(.Charlie),
+.ff-container input.ff-selector-type-6:checked ~ .ff-items li:not(.Dennis),
+.ff-container input.ff-selector-type-7:checked ~ .ff-items li:not(.Earl),
+.ff-container input.ff-selector-type-8:checked ~ .ff-items li:not(.Graham)
+{
+	-webkit-animation: scaleDown 0.3s linear forwards;
+	-moz-animation: scaleDown 0.3s linear forwards;
+	-o-animation: scaleDown 0.3s linear forwards;
+	-ms-animation: scaleDown 0.3s linear forwards;
+	animation: scaleDown 0.3s linear forwards;
+}
+@keyframes scaleUp {
+	50% { width: 250px; transform: scale(0,0); }
+    100% { width: 250px; transform: scale(1,1); }
+}
+@keyframes scaleDown {
+	0% { width: 250px; transform: scale(1,1);}
+	99% { width: 250px; transform: scale(0,0);}
+    100% { width: 0px; transform: scale(0,0); }
+}
+#content {
+  height:4000px;
+}
+.post-share {
+	position:absolute;
+	margin:auto;
+    left:0;
+    right:0;
+    bottom: 0;
+	width: 94px;
+	height: 46px;
+	margin: 10px 0px 0px 0px;
+	text-decoration:none;
+	width: 197px;
+	text-indent: 50px;
+	font: 15px/46px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: black;
+	background-color: white;
+	border: none;
+}
+.post-share:hover {
+	background: black;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.post-share_number {
+	width: 20px;
+	height: 16px;
+	padding: 15px;
+	display: block;
+	float:right;
+	color: red;
+	vertical-align: middle;
+	font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-indent: 0;
+}
+
+.post-share.text span {
+	background-color: red;
+}
